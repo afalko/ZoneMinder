@@ -99,7 +99,7 @@ sub getCmdFormat {
 
   my $null_command = "true";
 
-  my $prefix = "sudo -u ".$Config{ZM_WEB_USER}." ";
+  my $prefix = "su ".$Config{ZM_WEB_USER}." -c ";
   my $suffix = "";
   my $command = $prefix.$null_command.$suffix;
   Debug( "Testing \"$command\"\n" );
